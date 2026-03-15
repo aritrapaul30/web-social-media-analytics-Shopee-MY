@@ -29,9 +29,9 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 ---
 
-#### 📊 2.1 Web Metrics Comparison
+#### 📊 Web Metrics Comparison
 
-**2.1.1 — Traffic Volume & Conversion**
+**Traffic Volume & Conversion**
 
 | KPI | Shopee Malaysia | Interpretation |
 |---|---|---|
@@ -43,7 +43,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 > 💡 These numbers are powered by **gamification tools** like Shopee Games,
 > Live Streaming, and Personalised Recommendations — lengthening the customer journey.
 
-**2.1.2 — Technical Performance (Google Core Web Vitals 2026)**
+**Technical Performance (Google Core Web Vitals 2026)**
 
 | Metric | Shopee Score | Google Threshold | Status |
 |---|---|---|---|
@@ -53,7 +53,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 > 🚨 **Business Risk:** A 6.6s LCP causes **micro-abandonment** — users leave
 > before the page finishes loading, especially during high-traffic sale events.
 
-**2.1.3 — Competitive Context**
+**Competitive Context**
 
 | Platform | Monthly Visits | Country Rank |
 |---|---|---|
@@ -67,9 +67,9 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 ---
 
-#### 🔍 2.2 SEO & Visibility
+#### 🔍 SEO & Visibility
 
-**2.2.1 — Organic Performance**
+**Organic Performance**
 
 | Metric | Value |
 |---|---|
@@ -81,7 +81,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 > Organic outperforms paid traffic — meaning Shopee's SEO generates
 > **free, sustainable acquisition** at scale, suppressing customer acquisition costs.
 
-**2.2.2 — SEO Strategy Breakdown**
+**SEO Strategy Breakdown**
 
 | SEO Element | Strategy | Business Impact |
 |---|---|---|
@@ -91,7 +91,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 ---
 
-#### 🎮 2.3 Interactivity & User Engagement
+#### 🎮 Interactivity & User Engagement
 
 **Chat Infrastructure — Two-Tier System:**
 - 🤖 **Sophie Chatbot** — Automated first responder for vouchers & order tracking
@@ -105,7 +105,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 ---
 
-#### 📱 2.4 Mobile Optimization
+#### 📱 Mobile Optimization
 
 | Detail | Value |
 |---|---|
