@@ -160,9 +160,9 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 ### 5️⃣ 🏷️ Manual Labelling
 > Creating a "gold standard" ground truth for model validation
 
-- 🙋 The translated dataset was **manually reviewed** by the team
+- 🙋 The translated dataset was **manually reviewed**
 - Each review was labelled: ✅ **Positive** · ⚪ **Neutral** · ❌ **Negative**
-- This labelled dataset was used to:
+- This labelled dataset (Shopee_Reviews_Cleaned and Manually Labelled.csv) was used to:
   - Validate VADER unsupervised predictions
   - Train and test all supervised ML models
 
