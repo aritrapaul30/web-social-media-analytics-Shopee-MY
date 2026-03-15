@@ -7,7 +7,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 ---
 
-### 1️⃣ 🛍️ Introduction — Brand Overview
+### 1️⃣ 🛍️ Introduction and Brand Overview
 > Shopee Malaysia: Southeast Asia's leading hybrid e-commerce platform
 
 | Detail | Description |
@@ -20,12 +20,12 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 | 📊 Data Scope | Web analytics + 2,793 public user reviews |
 
 > Shopee manages massive Big Data assets defined by high traffic **Volume**,
-> transactional **Velocity**, and content **Variety** — making it an ideal
+> transactional **Velocity**, and content **Variety**, making it an ideal
 > candidate for full-stack digital analytics.
 
 ---
 
-### 2️⃣ 🌐 Part 1 — Web Analytics Landscape
+### 2️⃣ 🌐 Web Analytics Landscape
 
 ---
 
@@ -47,7 +47,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 | Metric | Shopee Score | Google Threshold | Status |
 |---|---|---|---|
-| ⏳ Largest Contentful Paint (LCP) | **6.6 seconds** | < 2.5s | ❌ FAIL — Poor |
+| ⏳ Largest Contentful Paint (LCP) | **6.6 seconds** | < 2.5s | ❌ FAIL |
 | 🎨 First Contentful Paint (FCP) | **2.9 seconds** | < 1.8s | ❌ FAIL |
 
 > 🚨 **Business Risk:** A 6.6s LCP causes **micro-abandonment** — users leave
@@ -78,7 +78,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 | 🔑 Organic Keywords Ranked | **~0.8 million** |
 | 📊 Organic Traffic Share | **20.83%** (vs 12.60% paid) |
 
-> Organic outperforms paid traffic — meaning Shopee's SEO generates
+> Organic outperforms paid traffic meaning Shopee's SEO generates
 > **free, sustainable acquisition** at scale, suppressing customer acquisition costs.
 
 **SEO Strategy Breakdown**
@@ -115,11 +115,11 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 | 🔍 Mobile SEO Fixes | Structured data schema + AMP principles applied |
 
 > Despite slow mobile load times, Shopee maintains high mobile SERP visibility
-> through AMP and structured data — compensating technically for its speed deficit.
+> through AMP and structured data, compensating technically for its speed deficit.
 
 ---
 
-### 3️⃣ 🕷️ Part 2 — Data Collection
+### 3️⃣ 🕷️ Data Collection
 
 **Tool Used:** Apify (web scraping)
 
@@ -144,12 +144,12 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 | Step | Method | Result |
 |---|---|---|
-| 📚 4.1 Load Libraries | pandas, VADER, sklearn, transformers, deep_translator | All dependencies ready |
-| 📥 4.2 Load Dataset | `pd.read_csv('Shopee_Reviews.csv')` | 2,793 rows loaded |
-| 🔁 4.3 Duplicate Removal | `df.drop_duplicates(inplace=True)` | Zero duplicates remaining |
-| 🩹 4.4 Missing Values | Mean (numeric) + Mode (text) imputation | 0 missing values confirmed ✅ |
-| 🌏 4.5 Language Translation | `GoogleTranslator(source='auto', target='en')` | All Malay/mixed reviews → English |
-| 😊 4.5 Emoji Handling | Custom regex `EMOJI_PATTERN` detector | Emoji-only reviews preserved as-is |
+| 📚 Load Libraries | pandas, VADER, sklearn, transformers, deep_translator | All dependencies ready |
+| 📥 Load Dataset | `pd.read_csv('Shopee_Reviews.csv')` | 2,793 rows loaded |
+| 🔁 Duplicate Removal | `df.drop_duplicates(inplace=True)` | Zero duplicates remaining |
+| 🩹 Missing Values | Mean (numeric) + Mode (text) imputation | 0 missing values confirmed ✅ |
+| 🌏 Language Translation | `GoogleTranslator(source='auto', target='en')` | All Malay/mixed reviews → English |
+| 😊 Emoji Handling | Custom regex `EMOJI_PATTERN` detector | Emoji-only reviews preserved as-is |
 
 > 💡 **Why translate?** Shopee Malaysia users write in Malay, English, and
 > *Manglish* (mixed). Translating to English first ensures VADER and ML models
@@ -172,22 +172,22 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 | ❌ Negative | 1,315 | 47.1% |
 | ⚪ Neutral | 151 | 5.4% |
 
-> ⚠️ **Class Imbalance Warning:** Only 5.4% Neutral reviews — all models
+> ⚠️ **Class Imbalance Warning:** Only 5.4% Neutral reviews. All models
 > struggled most with this class due to limited training samples.
 
 ---
 
 ### 6️⃣ 🤖 Sentiment Analysis — Unsupervised (VADER)
-> Rule-based lexicon approach — no labelled data required
+> Rule-based lexicon approach, no labelled data required
 
 **Pipeline Steps:**
 
 | Step | Detail |
 |---|---|
-| 6.1 ⚙️ Setup | `SentimentIntensityAnalyzer()` initialized |
-| 6.2 📐 Scoring | Compound score generated per review (−1 to +1) |
-| 6.3 🏷️ Labelling | `≥ 0.05` → Positive · `-0.05 to 0.05` → Neutral · `≤ -0.05` → Negative |
-| 6.4 🗂️ Topic Segmentation | 6 topics assigned per review |
+| ⚙️ Setup | `SentimentIntensityAnalyzer()` initialized |
+| 📐 Scoring | Compound score generated per review (−1 to +1) |
+| 🏷️ Labelling | `≥ 0.05` → Positive · `-0.05 to 0.05` → Neutral · `≤ -0.05` → Negative |
+| 🗂️ Topic Segmentation | 6 topics assigned per review |
 
 **📊 VADER Sentiment Results (2,793 reviews):**
 
@@ -204,9 +204,9 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 | 🌟 General Satisfaction | **48.0%** | Mostly Positive |
 | 💳 Transaction & Refund Services | **22.3%** | Mixed → Negative |
 | 🛎️ Customer Support | **12.6%** | Negative |
-| 🚚 Delivery Services | — | Negative |
-| 📱 App Features & Livestream | — | Mixed |
-| 🔧 Technical Features | — | Negative |
+| 🚚 Delivery Services | 8.6% | Negative |
+| 📱 App Features & Livestream | 6.1% | Mixed |
+| 🔧 Technical Features | 2.4% | Negative |
 
 **📈 Visualisations Produced:**
 - 🥧 **Pie Chart** — Overall sentiment distribution (Positive / Negative / Neutral)
@@ -253,7 +253,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 | Naive Bayes | 241/263 | 248/266 | **0/30** ❌ |
 | **DistilBERT** | **253/263** | **246/266** | **8/30** |
 
-> 💡 **Why DistilBERT wins:** It tokenises text into *contextual embeddings* —
+> 💡 **Why DistilBERT wins:** It tokenises text into *contextual embeddings*,
 > understanding how words relate to each other, not just counting them. This was
 > critical for Malaysian *Manglish* reviews where context completely changes meaning.
 
@@ -273,7 +273,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 **Key Finding:**
 > VADER overestimates positive sentiment by **~13%** compared to manual labels
 > (55.6% vs 47.5%). Relying only on VADER would cause Shopee to **miss nearly
-> 1 in 8 critical negative reviews** — a dangerous blind spot for brand health monitoring.
+> 1 in 8 critical negative reviews** shows a dangerous blind spot for brand health monitoring.
 
 ---
 
@@ -297,7 +297,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 ---
 
 ### 🔟 💡 Strategic Recommendations
-> Based on sentiment findings — focused on **Social Listening Strategy**
+> Based on sentiment findings and focused on **Social Listening Strategy**
 
 | # | Recommendation | Problem It Solves |
 |---|---|---|
@@ -310,7 +310,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 ### 🏁 Conclusion
 
-> Shopee Malaysia is a market leader — but its dominance is under pressure
+> Shopee Malaysia is a market leader but its dominance is under pressure
 > from **self-inflicted UX friction**, not competition.
 
 - 🏆 **DistilBERT** is the recommended production model at **90.70% accuracy**
