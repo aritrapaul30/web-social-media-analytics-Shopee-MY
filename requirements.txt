@@ -1,0 +1,11 @@
+text
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+nltk
+vaderSentiment
+wordcloud
+apify-client    # for data collection
+jupyter
