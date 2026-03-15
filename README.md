@@ -162,7 +162,7 @@ Part 3 delivers actionable recommendations in one chosen digital strategy area.
 
 - 🙋 The translated dataset was **manually reviewed**
 - Each review was labelled: ✅ **Positive** · ⚪ **Neutral** · ❌ **Negative**
-- This labelled dataset (Shopee_Reviews_Cleaned and Manually Labelled.csv) was used to:
+- This labelled dataset (`Shopee_Reviews_Cleaned and Manually Labelled.csv`) was used to:
   - Validate VADER unsupervised predictions
   - Train and test all supervised ML models
 
